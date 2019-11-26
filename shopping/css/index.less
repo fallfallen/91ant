@@ -1,0 +1,52 @@
+// 初始化
+html,body,div,p,ul,li,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;box-sizing: border-box;font-family: "微软雅黑";}
+ul,li{list-style: none;}
+
+// 导航
+
+
+// banner
+#banner{
+	height: 13.75rem;
+	background: silver;
+}
+
+// main content
+#mainContent{
+	.contentHead{
+		height: 3.125rem;
+		
+	}
+	.col-lg-3{
+		padding-left:0.5rem ;
+		padding-right: 0.5rem;
+	}
+	.itemContent{
+		// border:1px solid #e7e7e7;
+		width: 100%;
+		min-height: 256px;
+		margin-bottom: 1.25rem;
+		a{
+			text-decoration: none;
+			.card{
+				img{
+					max-width: 100%;
+					
+				}
+				.card-body{
+					padding: 0.3125rem;
+					border-top:1px solid #e7e7e7;
+					p{
+						color:red;
+					}
+					.item-title{
+						color: #000000;
+						overflow: hidden;
+						text-overflow:ellipsis;
+						white-space: nowrap;						
+					}					
+				}
+			}
+		}
+	}
+}
