@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<div id="goods" class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="goodsImg">
+						<img src="img/show1.jpg" alt="" class="showThis">
+						<img src="img/show2.png" alt="">
+						<img src="img/show3.jpg" alt="">
+						<img src="img/show4.png" alt="">
+						<img src="img/show5.jpg" alt="">
+					</div>
+					<div class="goodsThumb">
+						<ul>
+							<li class="nowThis"><img src="img/show1.jpg" alt=""></li>
+							<li><img src="img/show2.png" alt=""></li>
+							<li><img src="img/show3.jpg" alt=""></li>
+							<li><img src="img/show4.png" alt=""></li>
+							<li><img src="img/show5.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="goodsMsg">
+						<form>
+						  <div class="form-group row">
+						    <label for="staticEmail" class="col-sm-12 col-form-label">新年爆款-数你最棒</label>
+				
+						  </div>
+						  <div class="form-group row">
+						    <label for="inputPassword" class="col-sm-2 col-form-label">尺码</label>
+						    <div class="col-sm-10">
+						      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+						        <label class="btn btn-light active">
+						          <input type="radio" name="options" id="option1" checked> 160/XS
+						        </label>
+						        <label class="btn btn-light">
+						          <input type="radio" name="options" id="option2"> 165/S
+						        </label>
+						        <label class="btn btn-light">
+						          <input type="radio" name="options" id="option3"> 170/M
+						        </label>
+								<label class="btn btn-light">
+								  <input type="radio" name="options" id="option4"> 175/L
+								</label>
+								<label class="btn btn-light">
+								  <input type="radio" name="options" id="option5"> 180/XL
+								</label>
+								<label class="btn btn-light">
+								  <input type="radio" name="options" id="option6"> 185/XXL
+								</label>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="form-group row">
+						    <label for="inputPassword" class="col-sm-2 col-form-label">单价</label>
+						    <div class="col-sm-10">
+						      <p>￥<b id="price">159.00</b></p>
+						    </div>
+						  </div>
+						  <div class="form-group row">
+						    <label for="inputPassword" class="col-sm-2 col-form-label">数量</label>
+						    <div class="col-sm-10">
+						      <div class="input-group mb-3">
+						        <div class="input-group-prepend">
+						          <button class="btn btn-outline-danger" type="button" id="button-addon1">-</button>
+						        </div>
+						        <!-- <input type="text" class="form-control goodsNum" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"> -->
+								<input type="text" id="goodsNum" value="1" />
+								<div class="input-group-append">
+									<button class="btn btn-outline-primary" type="button" id="button-addon2">+</button>
+								</div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="form-group row">
+						    <label for="inputPassword" class="col-sm-2 col-form-label">合计</label>
+						    <div class="col-sm-10">
+						      <p>￥<b id="total"></b></p>
+						    </div>
+						  </div>
+						  <div class="buyBtn">
+							  <a href=""><button type="button" class="btn btn-danger">直接购买</button></a><a href=""><button type="button" class="btn btn-outline-danger">加入购物车</button></a>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="goodsMainmsg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<h6>详情介绍</h6>
+					</div>
+				</div>
+			</div>
+			<div class="goodsIntro">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<img src="img/main1.jpg" >
+							<img src="img/main2.jpg" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</html>

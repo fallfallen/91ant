@@ -1,0 +1,157 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+ul,
+li {
+  list-style: none;
+}
+/**index**/
+#banner {
+  height: 13.75rem;
+  background: silver;
+}
+#mainContent {
+  margin-bottom: 1.25rem;
+}
+#mainContent .contentHead {
+  height: 3.125rem;
+}
+#mainContent .col-lg-3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#mainContent .itemContent {
+  width: 100%;
+  min-height: 256px;
+  margin-bottom: 1.25rem;
+}
+#mainContent .itemContent a {
+  text-decoration: none;
+}
+#mainContent .itemContent a .card img {
+  max-width: 100%;
+}
+#mainContent .itemContent a .card .card-body {
+  padding: 0.3125rem;
+  border-top: 1px solid #e7e7e7;
+}
+#mainContent .itemContent a .card .card-body p {
+  color: red;
+}
+#mainContent .itemContent a .card .card-body .item-title {
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.footer {
+  width: 100%;
+  height: 3.75rem;
+  background: #000000;
+}
+/**content**/
+#goods {
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+#goods .goodsImg {
+  width: 31.25rem;
+  height: 31.25rem;
+  overflow: hidden;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  background: #E7E7E7;
+  margin-bottom: 0.625rem;
+  padding-top: 15.625rem;
+}
+#goods .goodsImg img {
+  max-width: 100%;
+  transform: translateY(-50%);
+  display: none;
+}
+#goods .goodsImg .showThis {
+  display: block;
+}
+#goods .goodsThumb ul li {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin: 0.3125rem;
+  border: 1px solid #e7e7e7;
+  background: #E7E7E7;
+  cursor: pointer;
+}
+#goods .goodsThumb ul li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#goods .goodsThumb ul .nowThis {
+  border: 1px solid red;
+}
+#goods .goodsMsg .btn-light {
+  border-color: transparent;
+}
+#goods .goodsMsg .active {
+  background: #FF6478 !important;
+  color: #ffffff;
+}
+#goods .goodsMsg #button-addon1 {
+  background: none;
+  color: #000000;
+}
+#goods .goodsMsg #button-addon2 {
+  background: none;
+  color: #000000;
+}
+#goods .goodsMsg #goodsNum {
+  width: 60px;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  text-align: center;
+}
+#goods .goodsMsg p {
+  color: #000000;
+  line-height: 38px;
+}
+#goods .goodsMsg .buyBtn {
+  border-top: 1px solid #e7e7e7;
+  padding-top: 20px;
+}
+#goods .goodsMsg .buyBtn button {
+  margin-right: 20px;
+}
+#goodsMainmsg h6 {
+  color: #ff6478;
+  line-height: 32px;
+  padding-left: 75px;
+}
+#goodsMainmsg .goodsIntro {
+  border-top: 1px solid #e7e7e7;
+  padding-top: 30px;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  text-align: center;
+}
+#goodsMainmsg .goodsIntro img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
