@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<div id="order">
+			<div class="container">
+				<div class="row">
+					<h5><b>确认订单</b></h5>
+					<div class="col-xl-12">
+						<p><img src="img/sgarr.png" alt="">收货地址</p>
+						<div class="address noAddress">
+							<form class="form-inline">
+								<label class="my-1 mr-2" for="inlineFormCustomSelectPref"  style="margin-right: 1rem!important;">收货地址</label>
+								<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect01">
+								    <option selected>省份</option>
+								    <option value="1">广东</option>
+								    <option value="2">广西</option>
+								    <option value="3">福建</option>
+								</select>
+								<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect02">
+								    <option selected>城市</option>
+								    <option value="1">佛山</option>
+								    <option value="2">云浮</option>
+								    <option value="3">广州</option>
+								</select>
+								<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect03">
+								    <option selected>县区</option>
+								    <option value="1">南海区</option>
+								    <option value="2">禅城区</option>
+								    <option value="3">桂城区</option>
+								</select>
+							</form>
+							<form class="form-inline">
+								<div class="form-group">
+								  <label for="inputPassword6">详细地址</label>
+								  <input type="text"  class="form-control mx-sm-3" id="fullAddress" aria-describedby="passwordHelpInline" style="width: 394px;">
+								</div>
+							</form>
+							<form class="form-inline">
+							  <div class="form-group">
+							    <label for="inputPassword6" style="padding-left: 12px;">联系人</label>
+							    <input type="text"  class="form-control mx-sm-3" id="gueName" >
+							  </div>
+							  <div class="form-group">
+							    <label for="inputPassword6">联系电话</label>
+							    <input type="tel"  class="form-control mx-sm-3" id="gueTel">						    
+							  </div>
+							</form>
+							<form>
+								<button type="button" class="btn btn-danger firstSave" data-dismiss="modal">保存</button>
+							</form>
+						</div>
+						<div class="existAddress">
+							<ul>
+								<li class="thisAddress">
+									<h6><span>姓名</span><span>0766-8888888</span></h6>
+									<p>中华人民共和国广东省佛山市南海区桂城街道瀚天科技城A区5号楼1号门6楼604蚂蚁雄兵网络科技有限公司进左边</p>
+									<div class="reviseAddress">
+										<a data-toggle="modal" data-target="#exampleModal">
+										  修改地址
+										</a>
+									</div>
+								</li>
+								<li>
+									<h6><span>姓名</span><span>0766-8888888</span></h6>
+									<p>中华人民共和国广东省佛山市南海区桂城街道瀚天科技城A区5号楼1号门6楼604蚂蚁雄兵网络科技有限公司进左边</p>
+									<div class="reviseAddress">
+										<a data-toggle="modal" data-target="#exampleModal">
+										  修改地址
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="addAddress">
+							<a data-toggle="modal" data-target="#exampleModal">
+							  添加地址
+							</a>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body"style="width: 600px;">
+						        <div class="address">
+						        	<form class="form-inline">
+						        		<label class="my-1 mr-2" for="inlineFormCustomSelectPref"  style="margin-right: 1rem!important;">收货地址</label>
+						        		<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect04">
+						        		    <option selected>省份</option>
+						        		    <option value="1">One</option>
+						        		    <option value="2">Two</option>
+						        		    <option value="3">Three</option>
+						        		</select>
+						        		<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect05">
+						        		    <option selected>城市</option>
+						        		    <option value="1">One</option>
+						        		    <option value="2">Two</option>
+						        		    <option value="3">Three</option>
+						        		</select>
+						        		<select class="custom-select my-1 mr-sm-2" id="inputGroupSelect06">
+						        		    <option selected>县区</option>
+						        		    <option value="1">One</option>
+						        		    <option value="2">Two</option>
+						        		    <option value="3">Three</option>
+						        		</select>
+						        	</form>
+						        	<form class="form-inline">
+						        		<div class="form-group">
+						        		  <label for="inputPassword6">详细地址</label>
+						        		  <input type="text"  class="form-control mx-sm-3" id="fullAddress2" aria-describedby="passwordHelpInline" style="width: 394px;">
+						        		</div>
+						        	</form>
+						        	<form class="form-inline">
+						        	  <div class="form-group">
+						        	    <label for="inputPassword6" style="padding-left: 12px;">联系人</label>
+						        	    <input type="text"  class="form-control mx-sm-3" id="gueName2" aria-describedby="passwordHelpInline">
+						        	  </div>
+						        	  <div class="form-group">
+						        	    <label for="inputPassword6">联系电话</label>
+						        	    <input type="tel"  class="form-control mx-sm-3" id="gueTel2" aria-describedby="passwordHelpInline">						    
+						        	  </div>
+						        	</form>
+						        	<form>
+						        		<button type="button" class="btn btn-danger modalSave" >保存</button>
+						        	</form>
+						        </div>
+						      </div>										      
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-xl-12">
+						<p><img src="img/sgarr.png" alt="">商品清单</p>
+						<div class="goodsList">
+							<div class="row">
+								<div class="col-xl-5 bg">
+									<p>商品单价</p>
+								</div>
+								<div class="col-xl-3 bg">
+									<p>单价</p>
+								</div>
+								<div class="col-xl-1 bg">
+									<p>数量</p>
+								</div>
+								<div class="col-xl-3 bg">
+									<p>合计</p>
+								</div>
+								<div class="col-xl-5 goodsId">
+									<img src="img/item1.jpg" alt="">
+									<div>
+										<p>商品名称</p>
+										<p>商品参数</p>
+										<p>正面反面</p>
+									</div>
+								</div>
+								<div class="col-xl-3">
+									<p>￥0.01</p>
+								</div>
+								<div class="col-xl-1">
+									<p>1</p>
+								</div>
+								<div class="col-xl-3">
+									<p>￥0.01</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-12">
+						<p><img src="img/sgarr.png" alt="">在线支付</p>
+						<div class="payType">
+							<!-- <p>
+								<label><input type="checkbox" name="" value="">使用余额支付（余额0.00元）</label>
+							</p>
+							<p>	
+								<label><input type="checkbox" name="" value="">其他支付方式，还需支付99.00元</label>
+							</p> -->
+							<div class="otherPay">
+								<a href="###"><img src="img/wxzficon.png" alt="">微信支付</a>
+								<a href="###"><img src="img/zfbicon.png" alt="">支付宝支付</a>
+							</div>
+						</div>
+								
+					</div>
+					<!-- <div class="col-xl-12"></div> -->
+					<div class="col-xl-12">
+						<ul class="priceMsg">
+							<li>商品金额：<span>￥0.01</span></li>
+							<li>运费：<span>￥0.00</span></li>
+							<li>优惠金额：<span>￥0.00</span></li>
+							<li>应付金额：<span>￥0.01</span></li>
+						</ul>
+					</div>
+					<div id="payBtn">
+						应付金额：<span>￥0.01</span> <button class="btn btn-danger" id="payLink">立即付款</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</html>
