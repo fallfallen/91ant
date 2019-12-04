@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		
+		<div id="shoppingcart">
+			<div class="container">
+				<div class="row">
+					<h5>购物车</h5>
+					<div class="col-xl-12 ">
+						<div class="cart">
+							<div class="row">
+								<div class="col-xl-1 bg"><input type="checkbox" class="all-select-btn">全选</div>
+								<div class="col-xl-4 bg">商品信息</div>
+								<div class="col-xl-2 bg">单价</div>
+								<div class="col-xl-2 bg">数量</div>
+								<div class="col-xl-2 bg">合计</div>
+								<div class="col-xl-1 bg">操作</div>
+							</div>
+							<ul>
+								<li>
+									<div class="row">
+										<div class="col-xl-1"><input type="checkbox" class="goods-select-btn"></div>
+										<div class="col-xl-4">
+											<img src="img/item1.jpg">
+											<div>
+												<p>新年爆款数你最棒</p>
+												<p class="pcolor">街潮款/黑色/XL(180)</p>
+											</div>
+										</div>
+										<div class="col-xl-2">￥<span class="unitPrice">159.00</span></div>
+										<div class="col-xl-2">
+											<div class="input-group mb-3">
+											    <div class="input-group-prepend">
+											      <button class="btn btn-outline-danger btn-sm redu" type="button" >-</button>
+											    </div>
+												<input type="text"  class="goodsNum" value="1" style="width: 40px;"/>
+												<div class="input-group-append">
+													<button class="btn btn-outline-primary btn-sm add" type="button" >+</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2">￥<span  class="oneTotal">159.00</span></div>
+										<div class="col-xl-1"><b></b></div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-xl-1"><input type="checkbox" class="goods-select-btn"></div>
+										<div class="col-xl-4">
+											<img src="img/item2.jpg">
+											<div>
+												<p>新年爆款数你最棒</p>
+												<p class="pcolor">街潮款/黑色/XL(180)</p>
+											</div>
+										</div>
+										<div class="col-xl-2">￥<span class="unitPrice">159.00</span></div>
+										<div class="col-xl-2">
+											<div class="input-group mb-3">
+											    <div class="input-group-prepend">
+											      <button class="btn btn-outline-danger btn-sm redu" type="button" >-</button>
+											    </div>
+												<input type="text"  class="goodsNum" value="1" style="width: 40px;"/>
+												<div class="input-group-append">
+													<button class="btn btn-outline-primary btn-sm add" type="button" >+</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2">￥<span class="oneTotal">159.00</span></div>
+										<div class="col-xl-1"><b></b></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-12">
+						<div class="account">
+							<div class="accountSelect">
+								<input type="checkbox" class="all-select-btn">全选<i></i>已选<span id="existSelect">0</span>/<span id="allSelect"></span>
+								<button type="button" class="btn btn-light btn-sm">全部删除</button>
+							</div>
+							<div class="accountMsg">
+								<div>
+									<p>总金额：￥<span class="allTotal">0.00</span></p>
+									<p>优惠金额：￥0.00</p>
+								</div>
+								<button type="button" class="btn btn-light btn-sm payaccount">结算</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</html>
